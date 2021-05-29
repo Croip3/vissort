@@ -62,6 +62,7 @@ const CustomButton = withStyles({
 const CustomMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',
+    borderRadius: 2,
   },
 })((props) => (
   <Menu
