@@ -7,7 +7,7 @@ import React from 'react'
 function NormalSlider({title}) {
     return (
         <div className="slider">
-            <Typography gutterBottom>{title}</Typography>
+            <CustomTypography gutterBottom>{title}</CustomTypography>
             <CustomSlider defaultValue={20} aria-labelledby="continuous-slider" />
          </div>
     )
@@ -49,3 +49,12 @@ const CustomSlider = withStyles({
     borderRadius: 4,
   },
 })(Slider);
+
+const CustomTypography = withStyles({
+  root: {
+    color: 'f5f5f5',
+    padding: 0,
+    margin: 0,
+    fontWeight: 'bold',
+  },
+})(Typography);

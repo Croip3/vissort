@@ -29,9 +29,9 @@ function NormalMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Bubble Sort</MenuItem>
-        <MenuItem onClick={handleClose}>Insertion Sort</MenuItem>
-        <MenuItem onClick={handleClose}>Heap Sort</MenuItem>
+        <CustomMenuItem onClick={handleClose}>Bubble Sort</CustomMenuItem>
+        <CustomMenuItem disabled onClick={handleClose}>Insertion Sort</CustomMenuItem>
+        <CustomMenuItem disabled onClick={handleClose}>Heap Sort</CustomMenuItem>
       </CustomMenu>
     </div>
     )
@@ -78,5 +78,17 @@ const CustomMenu = withStyles({
     {...props}
   />
 ));
+
+const CustomMenuItem = withStyles({
+  root: {
+    '&:focus': {
+      backgroundColor: '#047543',
+      color: '#f5f5f5',
+      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+        color: '#f5f5f5',
+      },
+    },
+  },
+})(MenuItem);
 
 export default NormalMenu

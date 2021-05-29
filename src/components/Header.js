@@ -16,9 +16,9 @@ const header = () => {
             </div>
 
             <div id="toolbar">
-                <NormalButtons text="new Array"/>
-                <NormalSlider title="array Size"/>
-                <NormalSlider title="sort speed"/>
+                <NormalButtons text="New Array"/>
+                <NormalSlider title="Array Size"/>
+                <NormalSlider title="Sort Speed"/>
                 <NormalMenu />
             </div>
 
