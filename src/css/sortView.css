@@ -1,0 +1,21 @@
+#sortContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+#sortView {
+  display: flex;
+  flex-flow: row;
+}
+
+/*      BAR     */
+
+.bar {
+  width: 0.5em;
+  height: 20em;
+
+  background-color: #047543;
+}

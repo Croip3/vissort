@@ -9,9 +9,7 @@ function NormalMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
-      console.log("hi")
     setAnchorEl(event.currentTarget);
-    console.log("hi")
   };
 
   const handleClose = () => {
@@ -30,7 +28,7 @@ function NormalMenu() {
         onClose={handleClose}
       >
         <CustomMenuItem onClick={handleClose}>Bubble Sort</CustomMenuItem>
-        <CustomMenuItem disabled onClick={handleClose}>Insertion Sort</CustomMenuItem>
+        <CustomMenuItem onClick={handleClose}>Insertion Sort</CustomMenuItem>
         <CustomMenuItem disabled onClick={handleClose}>Heap Sort</CustomMenuItem>
       </CustomMenu>
     </div>
