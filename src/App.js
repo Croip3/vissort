@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/app.css'
 import Header from './components/Header.js'
-import SortContainer from './components/sortScreen/sortContainer.js'
+import SortContainer from './components/sortScreen/SortContainer.js'
 
 function App() {
   return(

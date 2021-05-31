@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import '../../css/sortView.css'
 import Bar from './Bar.js'
-import changeBarMargin from './visualizer.js'
+import changeBarMargin from './visualizer'
 
-function SortContainer() {
-useEffect(() => {
-    changeBarMargin();
-  });
 
+class SortContainer extends React.Component {
+    
+
+render(){
     return (
         <div id="sortContainer">
             <div id="sortView">
@@ -18,5 +18,9 @@ useEffect(() => {
         </div>
     )
 }
+}
+
+
+
 
 export default SortContainer
