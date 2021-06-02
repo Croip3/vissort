@@ -1,11 +1,9 @@
 import React from 'react'
-import changeBarMargin from './visualizer'
 
 class Bar extends React.Component {
-    componentDidMount(){
-        console.log("hi")
-        changeBarMargin();
-    }
+    data;
+
+    
 
     render(){
         return (

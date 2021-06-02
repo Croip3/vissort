@@ -8,6 +8,7 @@ import NormalSlider from './Slider'
 import NormalMenu from './MenuButton'
 
 const header = () => {
+
     return (
         <header>
             <div id="logo">
@@ -20,6 +21,7 @@ const header = () => {
                 <NormalSlider title="Array Size"/>
                 <NormalSlider title="Sort Speed"/>
                 <NormalMenu />
+                 <NormalButtons text="Sort"/>
             </div>
 
             
