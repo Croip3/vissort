@@ -7,7 +7,7 @@ class Bar extends React.Component {
 
     render(){
         return (
-            <div className="bar"/>
+            <div className="bar" style={{height: this.props.height * 10}}/>
         )
     }
 }

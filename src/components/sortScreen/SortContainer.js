@@ -6,15 +6,18 @@ import Data from './data'
 
 class SortContainer extends React.Component {
 
-    componentDidMount(){
-        this.changeBarMargin()
-        this.changeBarLength()
-        //this.data =  new Data;
+    barId = 0;
+
+    constructor(){
+        super();
         this.data =  new Data();
     }
 
+    componentDidMount(){
+        this.changeBarMargin()
+    }
+
     changeBarMargin(){
-        console.log("margin");
         var width = document.getElementsByClassName("bar")[0].clientWidth;
 
         var bars = document.getElementsByClassName("bar");
@@ -22,18 +25,15 @@ class SortContainer extends React.Component {
             element.style.margin = "0px " + String(width/2) + "px"
         });
         //document.getElementsByClassName("bar")[0].style.backgroundColor = "blue";//.style.margin = "1em";
-    }
-
-    changeBarLength = () => {
-        console.log("length");
-    } 
-    
+    }    
 
     render(){
         
-        const barList = this.data.values.map(value => { 
+        //display data array from data.js
+        const barList = this.data.values.map(value => {
+            this.barId += 1;
             return( 
-                <Bar width={value}/>
+                <Bar key={this.barId} height={value}/>
             )
             })
 
